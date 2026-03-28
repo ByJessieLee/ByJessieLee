@@ -1,0 +1,302 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('extraimage.jpg'); /* Source [1] */
+        background-size: cover;
+        background-position: center;
+        color: var(--secondary);
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 10vw, 8rem);
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        line-height: 0.9;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-weight: 300;
+        max-width: 600px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+
+    section {
+        padding: 100px 10%;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        border-left: 10px solid var(--accent);
+        padding-left: 1.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: white;
+        padding: 2.5rem;
+        border: 1px solid #eee;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        border-color: var(--accent);
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    .highlight {
+        color: var(--accent);
+        font-weight: 700;
+    }
+
+    .experience-item {
+        margin-bottom: 4rem;
+    }
+
+    .experience-item h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .date {
+        font-weight: 700;
+        color: var(--muted);
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .portfolio-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        background: #ddd;
+    }
+
+    footer {
+        background: var(--primary);
+        color: var(--secondary);
+        padding: 5rem 10%;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: var(--primary);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: var(--accent);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 1.5rem 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        background: rgba(250, 250, 250, 0.9);
+        backdrop-filter: blur(10px);
+    }
+
+    .logo {
+        font-weight: 900;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+        section { padding: 50px 5%; }
+        .hero-title { font-size: 4rem; }
+    }
+</style>
+<nav class="nav">
+    <a href="#" class="logo">BY JESSIE LEE.</a>
+    <div>
+        <span class="highlight">2025 40 UNDER 40 LEADER</span>
+    </div>
+</nav>
+
+<header>
+    <span class="tag">Consultant & Strategist</span>
+    <h1 class="hero-title">Architect of<br>Connection.</h1>
+    <p class="hero-subtitle">High-performing marketing strategist driving organizational outcomes through campaign management, experiential storytelling, and community alchemy.</p>
+    <a href="#contact" class="btn" style="background: white; color: black;">Start the Evolution</a>
+</header>
+
+<section id="about">
+    <h2 class="section-title">The Powerhouse</h2>
+    <div class="grid">
+        <div>
+            <p>Jessie Lee is a high-performing digital marketing strategist with a proven track record of driving positive organizational outcomes [2]. Recognized as a <b>2025 40 Under 40 Leader to Watch</b>, she bridges the gap between data-informed logic and creative fire.</p>
+            <br>
+            <p>After leading the entire marketing lifecycle for <b>Orontes Yogurt</b> [3], Jessie launched her own consultancy to empower brands and communities through omnichannel mastery and experiential impact.</p>
+        </div>
+        <div style="background: url('IMG_5896.JPG') center/cover; min-height: 300px; border-radius: 0;">
+            <!-- Source [4] Placeholder -->
+        </div>
+    </div>
+</section>
+
+<section id="capabilities" style="background: #f0f0f0;">
+    <h2 class="section-title">Core Capabilities</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Omnichannel Strategy</h3>
+            <p>Full-scope digital strategy including SEO, paid/organic social, and email journeys designed to convert awareness into action [3, 5].</p>
+        </div>
+        <div class="card">
+            <h3>Experiential Marketing</h3>
+            <p>Creating immersive activations like the <b>YMCA Car Wash</b> [6] and community-driven events that build authentic trust.</p>
+        </div>
+        <div class="card">
+            <h3>Visual Storytelling</h3>
+            <p>End-to-end film production, professional voiceover [7], and creative direction using Adobe Lightroom and sound design [3, 8].</p>
+        </div>
+        <div class="card">
+            <h3>Community Engagement</h3>
+            <p>Deeply rooted leadership, serving as Vice President for <b>Lewisburg Neighborhoods</b> [9] and advocating for public safety [10].</p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Impact Archive</h2>
+    
+    <div class="experience-item">
+        <span class="date">FEB 2024 - MAR 2026</span>
+        <h3>Digital Marketing Strategist | Orontes Yogurt</h3>
+        <p>Led all branding and marketing efforts for a fast-growing A2A2 dairy brand. Managed the entire lifecycle from strategic SOP development to influencer marketing and retail partnerships [3].</p>
+    </div>
+
+    <div class="experience-item">
+        <span class="date">JAN 2022 - FEB 2024</span>
+        <h3>Marketing & Promotions Manager | DragonTree Media Group</h3>
+        <p>Managed accounts for <b>Geisinger Medical System</b>, focusing on nursing recruitment and community engagement through tailored brand messaging and performance analytics [11, 12].</p>
+    </div>
+
+    <div class="experience-item">
+        <span class="date">JAN 2026 - PRESENT</span>
+        <h3>Vice President | Lewisburg Neighborhoods</h3>
+        <p>Supporting community initiatives, organizational growth, and economic empowerment for the Downtown Lewisburg community [9].</p>
+    </div>
+</section>
+
+<section id="portfolio" style="background: var(--primary); color: white;">
+    <h2 class="section-title" style="border-color: white;">Beyond the Boardroom</h2>
+    <div class="grid">
+        <div>
+            <img src="20190816_200332.jpg" alt="Sunset" class="portfolio-img"> <!-- Source [13] -->
+            <h3>The Polar Bear Plunge</h3>
+            <p>Volunteer strategist producing high-impact promotional reels and event recap videos to drive engagement for local causes [14].</p>
+        </div>
+        <div>
+            <div class="portfolio-img" style="background: #333; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 2rem;">PINK FLARE AWARD</div>
+            <h3>Cookin' for a Cause</h3>
+            <p>Dedicated fundraiser for breast cancer awareness, serving as a "celebrity chef" and winning the <b>Pink Flare Award</b> [15, 16].</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="text-align: center;">
+    <h2 class="section-title" style="border: none; padding: 0;">Ready to scale?</h2>
+    <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto;">Whether you are launching a product or building a community ecosystem, let’s bring it to life with clarity and impact.</p>
+    <a href="mailto:hello@byjessielee.com" class="btn">Get in Touch</a>
+    <p style="margin-top: 2rem; color: var(--muted);">Lewisburg, PA | Available for Global Remote Partnerships [17].</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 BY JESSIE LEE. ALL RIGHTS RESERVED.</p>
+    <p style="margin-top: 1rem; opacity: 0.5; font-size: 0.8rem;">Strategic | Data-Driven | Creative [18]</p>
+</footer>
+
+<script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Simple Fade-in effect on scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "all 0.8s ease-out";
+        observer.observe(section);
+    });
+</script>
