@@ -1,26 +1,29 @@
+This updated version of the **By Jessie Lee** website transitions into a high-end "Resort Conference" aesthetic. The design is airy and professional, featuring a palette of sun-drenched gold and ocean blue to evoke an uplifting, high-status consulting environment. 
+
+The service offerings have been expanded to include technical proficiencies from the sources, such as **Strategic SOP Development**, **Omnichannel Campaign Planning**, **Performance Analytics**, and **Commercial Voiceover Production**.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>By Jessie Lee | Strategic Marketing & Community Catalyst</title>
-    <meta name="description" content="Strategic marketing and community engagement consultancy by Jessie Lee. 2025 40 Under 40 Honoree.">
     
-    <!-- Modern & Uplifting Typography -->
+    <!-- Sophisticated Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bright-white: #ffffff;
-            --warm-cream: #fffdf9;
-            --sun-yellow: #ffc107;
-            --sky-blue: #007bff;
-            --soft-blue: #e7f1ff;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
-            --glass: rgba(255, 255, 255, 0.9);
+            --resort-white: #ffffff;
+            --sand-cream: #fdfaf5;
+            --sun-gold: #ffc107;
+            --ocean-blue: #0056b3;
+            --sky-soft: #eef6ff;
+            --slate-dark: #1e293b;
+            --slate-muted: #64748b;
         }
 
         * {
@@ -31,24 +34,23 @@
         }
 
         body {
-            background-color: var(--bright-white);
-            color: var(--text-dark);
+            background-color: var(--resort-white);
+            color: var(--slate-dark);
             font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
             line-height: 1.6;
         }
 
-        /* Nav */
+        /* Navigation */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 1.25rem 8%;
+            padding: 1.5rem 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            background: var(--glass);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
@@ -56,24 +58,24 @@
         .logo {
             font-family: 'Outfit', sans-serif;
             font-weight: 900;
-            font-size: 1.6rem;
-            color: var(--text-dark);
+            font-size: 1.5rem;
+            color: var(--slate-dark);
             text-decoration: none;
-            letter-spacing: -1.5px;
+            letter-spacing: -1px;
             text-transform: uppercase;
         }
 
-        .nav-badge {
-            background: var(--sun-yellow);
-            color: var(--text-dark);
+        .status-badge {
+            background: var(--sun-gold);
+            color: var(--slate-dark);
             padding: 6px 16px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 800;
             border-radius: 4px;
             text-transform: uppercase;
         }
 
-        /* Hero */
+        /* Hero: High-End Resort Conference Style */
         header {
             height: 100vh;
             display: flex;
@@ -82,93 +84,96 @@
             align-items: center;
             text-align: center;
             padding: 0 10%;
-            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1)), 
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000');
+            background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.1)), 
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
             background-position: center;
-            position: relative;
-        }
-
-        .hero-tag {
-            background: var(--soft-blue);
-            color: var(--sky-blue);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
         }
 
         .hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(3.5rem, 12vw, 9rem);
+            font-size: clamp(3.5rem, 10vw, 8rem);
             font-weight: 900;
             line-height: 0.85;
-            color: var(--text-dark);
-            margin-bottom: 2rem;
-            letter-spacing: -4px;
+            color: var(--slate-dark);
+            letter-spacing: -3px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
         }
 
         .hero-sub {
             font-size: 1.5rem;
             max-width: 800px;
-            color: var(--text-muted);
+            color: var(--slate-muted);
             font-weight: 300;
         }
 
-        /* Section Global */
+        /* Sections */
         section {
-            padding: 140px 10%;
+            padding: 120px 10%;
         }
 
         .label {
-            color: var(--sun-yellow);
+            color: var(--sun-gold);
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 0.9rem;
+            letter-spacing: 4px;
+            font-size: 0.85rem;
             margin-bottom: 1.5rem;
             display: block;
         }
 
         .heading {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             margin-bottom: 4rem;
             line-height: 1.1;
-            letter-spacing: -2px;
         }
 
-        /* Services Grid */
-        .services-grid {
+        /* Evolution / About */
+        .evo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .evo-image {
+            width: 100%;
+            height: 600px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 40px 40px 0 var(--sand-cream);
+        }
+
+        /* Service Cards */
+        .services-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
+            gap: 2rem;
         }
 
         .service-card {
-            padding: 4rem 2.5rem;
-            background: var(--warm-cream);
-            border-radius: 30px;
-            transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            padding: 3.5rem 2.5rem;
+            background: var(--sand-cream);
+            border-radius: 16px;
             border: 1px solid rgba(0,0,0,0.03);
+            transition: 0.4s;
         }
 
         .service-card:hover {
-            transform: translateY(-15px);
-            background: var(--bright-white);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.06);
-            border-color: var(--sun-yellow);
+            background: var(--resort-white);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.05);
+            transform: translateY(-10px);
+            border-color: var(--sun-gold);
         }
 
         .service-card h3 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.75rem;
             margin-bottom: 1.5rem;
-            color: var(--sky-blue);
+            color: var(--ocean-blue);
         }
 
         .skill-list {
@@ -178,93 +183,63 @@
 
         .skill-list li {
             font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
+            color: var(--slate-muted);
+            margin-bottom: 0.6rem;
             display: flex;
             align-items: center;
         }
 
         .skill-list li::before {
-            content: "→";
-            color: var(--sun-yellow);
-            margin-right: 10px;
+            content: "•";
+            color: var(--sun-gold);
+            margin-right: 12px;
             font-weight: bold;
         }
 
-        /* The Evolution Section */
-        .evolution-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 6rem;
-            align-items: center;
-            background: var(--soft-blue);
-            padding: 100px 8%;
-            border-radius: 50px;
-        }
-
-        .evo-img {
-            width: 100%;
-            height: 600px;
-            border-radius: 40px;
-            object-fit: cover;
-            box-shadow: 30px 30px 0 var(--sun-yellow);
-        }
-
         /* Experience Timeline */
-        .timeline {
-            margin-top: 4rem;
-        }
-
         .timeline-row {
-            padding: 3rem 0;
+            padding: 3.5rem 0;
             border-top: 1px solid rgba(0,0,0,0.08);
             display: grid;
-            grid-template-columns: 250px 1fr;
+            grid-template-columns: 280px 1fr;
             gap: 2rem;
         }
 
-        .timeline-year {
-            font-weight: 800;
-            color: var(--sun-yellow);
-            font-size: 1.1rem;
-        }
-
-        /* CTA */
-        .footer-cta {
-            text-align: center;
-            background: var(--text-dark);
-            color: var(--bright-white);
+        /* Call to Action */
+        .resort-cta {
+            background: var(--slate-dark);
+            color: var(--resort-white);
             padding: 140px 10%;
-            border-radius: 80px 80px 0 0;
+            text-align: center;
+            border-radius: 40px 40px 0 0;
         }
 
-        .cta-big-text {
+        .cta-link {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(2.5rem, 8vw, 7rem);
+            font-size: clamp(2.5rem, 8vw, 6rem);
             font-weight: 900;
             text-decoration: none;
-            color: var(--bright-white);
+            color: var(--resort-white);
             transition: 0.3s;
         }
 
-        .cta-big-text:hover {
-            color: var(--sun-yellow);
+        .cta-link:hover {
+            color: var(--sun-gold);
         }
 
         footer {
             padding: 4rem 10%;
-            background: var(--text-dark);
-            color: rgba(255,255,255,0.5);
+            background: var(--slate-dark);
+            color: rgba(255,255,255,0.4);
             display: flex;
             justify-content: space-between;
             font-size: 0.8rem;
-            text-transform: uppercase;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         @media (max-width: 1024px) {
-            .evolution-box { grid-template-columns: 1fr; gap: 3rem; }
-            .timeline-row { grid-template-columns: 1fr; }
+            .evo-grid, .timeline-row { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -272,129 +247,135 @@
 
     <nav>
         <a href="#" class="logo">By Jessie Lee.</a>
-        <div class="nav-badge">2025 40 Under 40 Leader</div>
+        <div class="status-badge">2025 40 Under 40 Honoree</div>
     </nav>
 
     <header>
-        <span class="hero-tag">Strategy with Soul</span>
+        <span class="label">Elite Marketing & Community Engagement</span>
         <h1 class="hero-title">Architect of<br>Connection.</h1>
-        <p class="hero-sub">High-performing digital marketing strategist and community catalyst. Converting data-informed logic into creative fire.</p>
+        <p class="hero-sub">Leading full-scope digital strategy and community alchemy with clarity, consistency, and measurable impact.</p>
     </header>
 
-    <section id="evolution">
-        <div class="evolution-box">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000" class="evo-img" alt="Professional Empowerment">
+    <section id="about">
+        <div class="evo-grid">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecee?auto=format&fit=crop&q=80&w=1000" class="evo-image" alt="Client Conference Setting">
             <div>
-                <span class="label">The Powerhouse Transition</span>
+                <span class="label">The Powerhouse Pivot</span>
                 <h2 class="heading">Strategic. Data-Driven. Creative.</h2>
-                <p>After a definitive tenure as the powerhouse behind <b>Orontes Yogurt</b>, where she managed the entire marketing lifecycle for a high-growth brand, Jessie Lee has launched her independent consultancy. She specializes in building ecosystems where brands and communities thrive together.</p>
+                <p>After a definitive tenure as the Digital Marketing Strategist for <b>Orontes Yogurt</b>, where she led the entire marketing lifecycle, Jessie Lee has launched her independent consultancy. She specializes in building ecosystems where high-performing brands and vibrant communities thrive together.</p>
                 <br>
-                <p>Jessie brings ideas to life with clarity and impact, whether she is winning the <b>Pink Flare Award</b> for community service or designing omnichannel campaigns that earn real attention online and off.</p>
+                <p>Recognized as a <b>2025 40 Under 40 Leader</b>, Jessie bridges the gap between digital precision and human storytelling, helping organizations solve complex, high-stakes problems.</p>
             </div>
         </div>
     </section>
 
-    <section id="offerings">
-        <span class="label">Advanced Service Offerings</span>
-        <h2 class="heading">Full-Scope Expertise.</h2>
-        <div class="services-grid">
+    <section id="services" style="background-color: var(--sky-soft);">
+        <span class="label">Consulting & Service Offerings</span>
+        <h2 class="heading">Comprehensive Expertise.</h2>
+        <div class="services-container">
             
             <div class="service-card">
-                <h3>Digital Growth & Strategy</h3>
-                <p>Developing omnichannel campaigns that tell a compelling story while driving measurable growth and market expansion.</p>
+                <h3>Digital Growth Strategy</h3>
+                <p>Developing omnichannel campaigns that convert awareness into engagement and engagement into action.</p>
                 <ul class="skill-list">
-                    <li>Strategic Marketing Management</li>
-                    <li>SEO & Search Strategy</li>
-                    <li>Paid & Organic Digital Advertising</li>
-                    <li>Customer Lifecycle Campaigns</li>
+                    <li>Omnichannel Campaign Planning</li>
+                    <li>SEO & Organic Search Strategy</li>
+                    <li>Digital Advertising (Paid/Organic)</li>
                     <li>Performance Analytics & Goal Setting</li>
+                    <li>Customer Lifecycle Campaigns</li>
                 </ul>
             </div>
 
             <div class="service-card">
-                <h3>Creative Production</h3>
-                <p>Merging professional visual storytelling with technical excellence to build brand worlds that resonate.</p>
+                <h3>Production & Creative</h3>
+                <p>High-level visual storytelling and technical direction to capture a brand's authentic voice.</p>
                 <ul class="skill-list">
-                    <li>Film Production & Video Editing</li>
                     <li>Commercial Voiceover Production</li>
-                    <li>Creative Direction & Branding</li>
-                    <li>Sound Design & Post-Production</li>
+                    <li>Film Production & Editing</li>
                     <li>Adobe Lightroom & Image Editing</li>
+                    <li>Sound Design & Post-Production</li>
+                    <li>Graphic Design & Visual Identity</li>
                 </ul>
             </div>
 
             <div class="service-card">
-                <h3>Brand Ecosystems</h3>
-                <p>Designing the operational and collaborative backbone of successful brands through effective organization and delegation.</p>
+                <h3>Operational Ecosystems</h3>
+                <p>Building the operational backbone for organizational consistency and market expansion.</p>
                 <ul class="skill-list">
                     <li>Strategic SOP Development</li>
-                    <li>Retail & Sponsorship Marketing</li>
                     <li>Strategic Partnership Management</li>
-                    <li>Content Strategy & Copywriting</li>
+                    <li>Organization & Delegation</li>
+                    <li>Annual Report Generation</li>
                     <li>Influencer Marketing Management</li>
                 </ul>
             </div>
 
-            <div class="service-card" style="background: var(--soft-blue);">
+            <div class="service-card" style="background-color: var(--resort-white);">
                 <h3>Community Alchemy</h3>
-                <p>Immersive activations that enhance messaging and foster genuine trust within local and digital communities.</p>
+                <p>Immersive activations that foster genuine trust and neighborhood development.</p>
                 <ul class="skill-list">
                     <li>Experiential Marketing Activations</li>
-                    <li>Community Outreach & Engagement</li>
-                    <li>High-Stakes Problem Solving</li>
-                    <li>Fundraising & Event Production</li>
+                    <li>Sponsorship Marketing</li>
                     <li>Public Speaking & Team Leadership</li>
+                    <li>Event Planning & Fundraising</li>
+                    <li>Community Outreach & Engagement</li>
                 </ul>
             </div>
 
         </div>
     </section>
 
-    <section id="archive">
-        <span class="label">Archive of Impact</span>
-        <h2 class="heading">Proven Track Record.</h2>
+    <section id="impact">
+        <span class="label">Impact Archive</span>
+        <h2 class="heading">Proven Performance.</h2>
         
-        <div class="timeline">
-            <div class="timeline-row">
-                <div class="timeline-year">2024 — 2026</div>
-                <div class="timeline-content">
-                    <h3>Digital Marketing Strategist | Orontes Yogurt</h3>
-                    <p>Led all branding and marketing efforts for a fast-growing A2A2 dairy brand. Managed the entire marketing lifecycle, from strategic planning to influencer marketing and retail partnerships.</p>
-                </div>
+        <div class="timeline-row">
+            <div class="timeline-meta">
+                <h4 style="color: var(--sun-gold);">2024 — 2026</h4>
+                <p><b>Orontes Yogurt</b></p>
             </div>
-
-            <div class="timeline-row">
-                <div class="timeline-year">2022 — 2024</div>
-                <div class="timeline-content">
-                    <h3>Marketing & Promotions Manager | DragonTree Media</h3>
-                    <p>Managed Geisinger Medical System accounts. Specialized in nursing recruitment and community engagement through immersive activations and data-driven brand messaging.</p>
-                </div>
+            <div class="timeline-content">
+                <h3>Digital Marketing Strategist</h3>
+                <p>Full-scope lead for all branding and marketing efforts. Managed the entire marketing lifecycle for a fast-growing A2A2 dairy brand, from creative direction to performance analytics.</p>
             </div>
+        </div>
 
-            <div class="timeline-row">
-                <div class="timeline-year">PRESENT</div>
-                <div class="timeline-content">
-                    <h3>Vice President | Lewisburg Neighborhoods</h3>
-                    <p>Advancing community growth and safety advocacy. Serving as the Digital Marketing Developer for the Polar Bear Plunge, producing all high-impact promotional films.</p>
-                </div>
+        <div class="timeline-row">
+            <div class="timeline-meta">
+                <h4 style="color: var(--sun-gold);">2022 — 2024</h4>
+                <p><b>DragonTree Media</b></p>
+            </div>
+            <div class="timeline-content">
+                <h3>Marketing & Promotions Manager</h3>
+                <p>Proudly served the Geisinger Medical System and School of Medicine accounts. Specialized in nursing recruitment and community engagement through immersive storytelling.</p>
+            </div>
+        </div>
+
+        <div class="timeline-row" style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+            <div class="timeline-meta">
+                <h4 style="color: var(--sun-gold);">CURRENT</h4>
+                <p><b>Lewisburg Neighborhoods</b></p>
+            </div>
+            <div class="timeline-content">
+                <h3>Vice President, Board of Directors</h3>
+                <p>Advancing community growth and safety advocacy. Lead marketing strategist for the Polar Bear Plunge, producing all high-impact promotional films and event recaps.</p>
             </div>
         </div>
     </section>
 
-    <section class="footer-cta">
-        <span class="label" style="color: var(--sun-yellow);">Work with the 40 Under 40 Strategist</span>
+    <section class="resort-cta">
+        <span class="label" style="color: var(--sun-gold);">Ready to Evolve?</span>
         <br>
-        <a href="mailto:hello@byjessielee.com" class="cta-big-text">Start the Evolution.</a>
-        <p style="margin-top: 4rem; opacity: 0.7;">"We make champions on and off the field."</p>
+        <a href="mailto:hello@byjessielee.com" class="cta-link">Start the Conversation.</a>
+        <p style="margin-top: 4rem; opacity: 0.6; font-style: italic;">"Making champions on and off the field".</p>
     </section>
 
     <footer>
-        <div>© 2026 BY JESSIE LEE. ALL RIGHTS RESERVED.</div>
+        <div>© 2026 BY JESSIE LEE.</div>
         <div>Lewisburg, PA & Global Remote</div>
     </footer>
 
     <script>
-        const observerOptions = { threshold: 0.15 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -402,14 +383,15 @@
                     entry.target.style.transform = "translateY(0)";
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.service-card, .evolution-box, .timeline-row').forEach(el => {
+        document.querySelectorAll('section, .service-card').forEach(el => {
             el.style.opacity = "0";
-            el.style.transform = "translateY(40px)";
-            el.style.transition = "all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "all 0.8s ease-out";
             observer.observe(el);
         });
     </script>
 </body>
 </html>
+```
